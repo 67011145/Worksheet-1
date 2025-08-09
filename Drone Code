@@ -1,0 +1,10 @@
+tello.takeoff()
+i = 1
+while i <= 8:
+    tello.move_forward(80)
+    tello.rotate_clockwise(90)
+    i += 1
+tello.land()
+power = tello.get_battery()
+print("Power Level =", power, "%")
+tello.get_flight_time()
